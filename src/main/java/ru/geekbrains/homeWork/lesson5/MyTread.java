@@ -3,7 +3,7 @@ package ru.geekbrains.homeWork.lesson5;
 import java.util.Arrays;
 
 public class MyTread {
-    private static final int SIZE = 10000000;
+    private static final int SIZE = 10_000_000;
     private static final int HALF_SIZE = SIZE / 2;
 
     public float[] calculate(float[] arr) {
