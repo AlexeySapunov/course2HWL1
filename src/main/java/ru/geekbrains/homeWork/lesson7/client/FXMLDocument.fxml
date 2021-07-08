@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="256.0" prefWidth="348.0" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/2.2"
+            fx:controller="ru.geekbrains.homeWork.lesson7.client.FXMLDocumentController">
+    <VBox prefHeight="219.0" prefWidth="348.0">
+        <TextArea fx:id="TextArea" editable="false" prefHeight="219.0" prefWidth="348.0"
+                  wrapText="true"/>
+    </VBox>
+    <HBox layoutY="219.0" prefHeight="37.0" prefWidth="348.0">
+        <TextField fx:id="TextField" onAction="#sendMsg" prefHeight="37.0" prefWidth="288.0"
+                   promptText="Введите текст"/>
+        <Button fx:id="sendButton" mnemonicParsing="false" onAction="#sendMsg" prefHeight="37.0" prefWidth="99.0"
+                text="Отправить"/>
+    </HBox>
+</AnchorPane>
