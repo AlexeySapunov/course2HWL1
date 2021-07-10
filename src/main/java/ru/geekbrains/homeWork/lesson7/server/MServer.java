@@ -2,16 +2,17 @@ package ru.geekbrains.homeWork.lesson7.server;
 
 import java.net.*;
 import java.io.*;
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MServer {
 
-    private Vector<ClientHandler> clients;
+    private List<ClientHandler> clients;
 
     public MServer() {
         try {
             ServerSocket serv_socket = new ServerSocket(12345);
-            clients = new Vector<>();
+            clients = new ArrayList<>();
 
             //noinspection InfiniteLoopStatement
             while(true) {
